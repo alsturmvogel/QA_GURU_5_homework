@@ -31,7 +31,7 @@ def test_form():
     browser.element('label[for="hobbies-checkbox-1"]').click()
 
     # Адрес
-    browser.element('#currentAddress').type('Москва, ул.Гоголя 1')
+    browser.element('#currentAddress').type('Москва, ул.Гоголя 10')
 
     # Отправка формы
     browser.element('#submit').click()
