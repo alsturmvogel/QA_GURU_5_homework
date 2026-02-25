@@ -4,6 +4,7 @@ from pathlib import Path
 
 file_path = Path(__file__).parent / 'images.jpeg'
 
+
 def test_form():
     # Открываем браузер
     browser.open('https://demoqa.com/automation-practice-form')
@@ -33,7 +34,7 @@ def test_form():
     # Хобби
     browser.element('label[for="hobbies-checkbox-1"]').click()
 
-    #Загружаем картинку
+    # Загружаем картинку
     browser.element('#uploadPicture').send_keys(str(file_path.resolve()))
 
     # Штат и город
